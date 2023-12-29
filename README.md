@@ -1,54 +1,32 @@
-# Astro Starter Kit: Basics
+# Portafolio Personal
 
-```sh
-npm create astro@latest -- --template basics
-```
+¡Bienvenido a mi portafolio personal! Este sitio web ha sido desarrollado con [Astro](https://astro.build/) y estilizado con [Tailwind CSS](https://tailwindcss.com/), combinando eficiencia y diseño moderno.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Tecnologías Utilizadas
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- [Astro](https://astro.build/): Marco de construcción de sitios web rápido y moderno.
+- [Tailwind CSS](https://tailwindcss.com/): Un framework de CSS utilizable con facilidad y flexibilidad.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Características
 
-## 🚀 Project Structure
+- **Diseño Responsivo:** El sitio es totalmente responsive, asegurando una experiencia óptima en una variedad de dispositivos y tamaños de pantalla.
+- **Optimizado para Rendimiento:** Se ha prestado atención a la eficiencia del rendimiento para garantizar tiempos de carga rápidos.
+- **Estilo Personalizado con Tailwind:** Cada elemento visual ha sido diseñado y estilizado utilizando las clases de Tailwind CSS, proporcionando un aspecto único y atractivo.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Instalación
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Clona este repositorio: `git clone https://github.com/tuusuario/tu-portafolio.git`
+2. Instala las dependencias: `npm install`
+3. Inicia el servidor de desarrollo: `npm run dev`
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Derechos de Uso
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Este proyecto está diseñado como un punto de partida para tu propio portafolio personal. Eres libre de utilizar este código como base para desarrollar tu propio sitio web. Si encuentras áreas de mejora o deseas contribuir, ¡siéntete libre de hacerlo!
 
-Any static assets, like images, can be placed in the `public/` directory.
+## Personalización
 
-## 🧞 Commands
+Siéntete libre de personalizar este proyecto según tus necesidades. Puedes ajustar los estilos, agregar nuevas secciones o incluso integrar tus propias tecnologías y proyectos.
 
-All commands are run from the root of the project, from a terminal:
+## Licencia
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.

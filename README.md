@@ -15,7 +15,7 @@
 
 ## Instalación
 
-1. Clona este repositorio: `git clone https://github.com/tuusuario/tu-portafolio.git`
+1. Clona este repositorio: `git clone https://github.com/PoquetzSY/Portafolio.git`
 2. Instala las dependencias: `npm install`
 3. Inicia el servidor de desarrollo: `npm run dev`
 
@@ -29,4 +29,4 @@ Siéntete libre de personalizar este proyecto según tus necesidades. Puedes aju
 
 ## Licencia
 
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE](LICENSE) para más detalles.
+Este proyecto está bajo la Licencia MIT.

@@ -12,38 +12,38 @@ const TAGS = {
     FIREBASE: {
         name: "Firebase",
         class: "bg-orange-700 text-white",
-        icon: Firebase
+        icon: Firebase,
     },
     TAILWIND: {
         name: "Tailwind CSS",
         class: "bg-[#003159] text-white",
-        icon: Tailwind
+        icon: Tailwind,
     },
     HTML: {
         name: "HTML",
         class: "bg-orange-900 text-white",
-        icon: HTML
+        icon: HTML,
     },
     CSS: {
         name: "CSS",
         class: "bg-blue-900 text-white",
-        icon: CSS
+        icon: CSS,
     },
     JAVASCRIPT: {
         name: "JavaScript",
         class: "bg-yellow-600 text-white",
-        icon: JAVASCRIPT
+        icon: JAVASCRIPT,
     },
     BOOTSTRAP: {
         name: "Bootstrap",
         class: "bg-purple-900 text-white",
-        icon: BOOTSTRAP
+        icon: BOOTSTRAP,
     },
-    Astro:{
+    Astro: {
         name: "Astro",
         class: "bg-gray-700 text-white",
-        icon: ASTRO
-    }
+        icon: ASTRO,
+    },
 };
 const PROJECTS = [
     {
@@ -95,12 +95,22 @@ const PROJECTS = [
                     ))}
                 </ul>
                 <div class="flex justify-evenly gap-4 m-7">
-                    <a href={link} target="_blank" rel="noopener noreferrer" class="flex w-24 rounded-[5px] items-center bg-gray-600">
+                    <a
+                        href={link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex w-24 rounded-[5px] items-center bg-gray-600"
+                    >
                         <BrowserIcon class="size-4 mx-2" />
                         Visitar
                     </a>
-                    <a href={github} target="_blank" rel="noopener noreferrer" class="flex w-24 rounded-[5px] items-center bg-neutral-800">
-						<GithubIcon class="size-4 mx-2" />
+                    <a
+                        href={github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex w-24 rounded-[5px] items-center bg-neutral-800"
+                    >
+                        <GithubIcon class="size-4 mx-2" />
                         Github
                     </a>
                 </div>

@@ -1,0 +1,110 @@
+---
+import Firebase from "./icons/Firebase.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import HTML from "./icons/Html.astro";
+import CSS from "./icons/Css.astro";
+import JAVASCRIPT from "./icons/Javascript.astro";
+import BOOTSTRAP from "./icons/Bootstrap.astro";
+import ASTRO from "./icons/AstroIcon.astro";
+import GithubIcon from "./icons/Github.astro";
+import BrowserIcon from "./icons/Browser.astro";
+const TAGS = {
+    FIREBASE: {
+        name: "Firebase",
+        class: "bg-orange-700 text-white",
+        icon: Firebase
+    },
+    TAILWIND: {
+        name: "Tailwind CSS",
+        class: "bg-[#003159] text-white",
+        icon: Tailwind
+    },
+    HTML: {
+        name: "HTML",
+        class: "bg-orange-900 text-white",
+        icon: HTML
+    },
+    CSS: {
+        name: "CSS",
+        class: "bg-blue-900 text-white",
+        icon: CSS
+    },
+    JAVASCRIPT: {
+        name: "JavaScript",
+        class: "bg-yellow-600 text-white",
+        icon: JAVASCRIPT
+    },
+    BOOTSTRAP: {
+        name: "Bootstrap",
+        class: "bg-purple-900 text-white",
+        icon: BOOTSTRAP
+    },
+    Astro:{
+        name: "Astro",
+        class: "bg-gray-700 text-white",
+        icon: ASTRO
+    }
+};
+const PROJECTS = [
+    {
+        title: "Green Energy",
+        description:
+            "Una plataforma web diseñada para fomentar la adopción de energía limpia y sostenible en México.",
+        link: "https://greenergy.netlify.app/",
+        github: "https://github.com/PoquetzSY/GreenEnergy",
+        image: "/projects/greenenergy.webp",
+        tags: [
+            TAGS.HTML,
+            TAGS.CSS,
+            TAGS.JAVASCRIPT,
+            TAGS.BOOTSTRAP,
+            TAGS.FIREBASE,
+        ],
+    },
+    {
+        title: "Zonas Arqueológicas",
+        description:
+            "Disfruta de nuestra cultura desde la palma de tu mano, navega y conoce nuestras zonas arqueológicas mediante esta plataforma web.",
+        link: "https://zonasar.netlify.app/",
+        github: "https://github.com/PoquetzSY/zonas-ar",
+        image: "/projects/zonasar.webp",
+        tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    },
+];
+---
+
+<div class="flex gap-x-16">
+    {
+        PROJECTS.map(({ title, description, tags, image, link, github }) => (
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-slate-700 bg-opacity-20">
+                <img class="w-full" src={image} alt="Sunset in the mountains" />
+                <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2">{title}</div>
+                    <p class="text-base text-justify">{description}</p>
+                </div>
+                <ul class="grid gap-4 grid-cols-3 mx-5 mb-4">
+                    {tags.map((tag) => (
+                        <li>
+                            <span
+                                class={`flex gap-x-2 rounded-[10px] text-xs ${tag.class} py-1 px-2`}
+                            >
+                                <tag.icon class="size-4" />
+                                {tag.name}
+                            </span>
+                        </li>
+                    ))}
+                </ul>
+                <div class="flex justify-evenly gap-4 m-7">
+                    <a href={link} target="_blank" rel="noopener noreferrer" class="flex w-24 rounded-[5px] items-center bg-gray-600">
+                        <BrowserIcon class="size-4 mx-2" />
+                        Visitar
+                    </a>
+                    <a href={github} target="_blank" rel="noopener noreferrer" class="flex w-24 rounded-[5px] items-center bg-neutral-800">
+						<GithubIcon class="size-4 mx-2" />
+                        Github
+                    </a>
+                </div>
+            </div>
+        ))
+    }
+</div>

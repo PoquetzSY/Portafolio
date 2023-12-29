@@ -15,7 +15,7 @@ const TAGS = {
         icon: Firebase,
     },
     TAILWIND: {
-        name: "Tailwind CSS",
+        name: "Tailwind",
         class: "bg-[#003159] text-white",
         icon: Tailwind,
     },
@@ -70,13 +70,22 @@ const PROJECTS = [
         image: "/projects/zonasar.webp",
         tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
     },
+    {
+        title: "Portafolio",
+        description:
+            "¡Bienvenido a mi portafolio personal! Este sitio web ha sido desarrollado con Astro y estilizado con Tailwind CSS, combinando eficiencia y diseño moderno.",
+        link: "https://zonasar.netlify.app/",
+        github: "https://github.com/PoquetzSY/zonas-ar",
+        image: "/projects/portafolio.webp",
+        tags: [TAGS.Astro, TAGS.TAILWIND],
+    }
 ];
 ---
 
-<div class="flex gap-x-16">
+<div class="grid grid-cols-3 gap-x-16 justify-items-center">
     {
         PROJECTS.map(({ title, description, tags, image, link, github }) => (
-            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-slate-700 bg-opacity-20">
+            <div class="max-w-sm rounded overflow-hidden shadow-lg bg-slate-700 bg-opacity-20 mb-10">
                 <img class="w-full" src={image} alt="Sunset in the mountains" />
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{title}</div>

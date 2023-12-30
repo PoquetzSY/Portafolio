@@ -1,3 +1,8 @@
+---
+import MenuIcon from "./icons/Menu.astro";
+import CloseIcon from "./icons/Close.astro";
+---
+
 <header
     class="flex justify-between items-center py-4 w-full sticky top-0 bg-black px-[30px]"
 >
@@ -7,19 +12,57 @@
         target="_blank"
         rel="noopener noreferrer">PoquetzSY</a
     >
+    <div
+        id="navbar"
+        class="lg:static absolute bg-black left-0 top-[64px] w-full flex justify-center text-center pb-4 lg:pb-0 lg:justify-end invisible lg:visible"
+    >
+        <nav class="flex lg:flex-row flex-col gap-[4vw] lg:gap-x-10">
+            <a href="#top" class="plink hover:-translate-y-1 transition"
+                >Inicio</a
+            >
+            <a href="#about-me" class="plink hover:-translate-y-1 transition"
+                >Sobre mi</a
+            >
+            <a href="#projects" class="plink hover:-translate-y-1 transition"
+                >Proyectos</a
+            >
+            <a
+                href="/CV/CV_LuisGomez.pdf"
+                download
+                class="plink bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-black px-4 border border-blue-300 hover:border-transparent rounded hover:scale-[115%] transition"
+            >
+                CV
+            </a>
+            <!-- <a href="/contact">Contact</a> -->
+        </nav>
+    </div>
+    <div class="lg:invisible justify-end">
+        <button id="menu" type="button"><MenuIcon /></button>
+        <button id="close" type="button" class="hidden"><CloseIcon /></button>
+    </div>
+    <script>
+        const nav = document.getElementById("navbar");
+        const menuB = document.getElementById("menu");
+        const closeB = document.getElementById("close");
+        menuB?.addEventListener("click", () => {
+            closeB?.classList.remove("hidden");
+            menuB.classList.add("hidden");
+            nav?.classList.remove("invisible");
+        });
+        closeB?.addEventListener("click", () => {
+            closeB.classList.add("hidden");
+            menuB?.classList.remove("hidden");
+            nav?.classList.add("invisible");
+        });
 
-    <nav class="flex flex-row gap-x-10">
-        <a href="#top" class="hover:-translate-y-1 transition">Inicio</a>
-        <a href="#about-me" class="hover:-translate-y-1 transition">Sobre mi</a>
-        <a href="#projects" class="hover:-translate-y-1 transition">Proyectos</a
-        >
-        <a
-            href="/CV/CV_LuisGomez.pdf"
-            download
-            class="bg-transparent hover:bg-blue-300 text-blue-300 font-semibold hover:text-black px-4 border border-blue-300 hover:border-transparent rounded hover:scale-[115%] transition"
-        >
-            CV
-        </a>
-        <!-- <a href="/contact">Contact</a> -->
-    </nav>
+        const links = document.querySelectorAll("a.plink");
+
+        links.forEach((link) => {
+            link.addEventListener("click", () => {
+                closeB?.classList.add("hidden");
+                menuB?.classList.remove("hidden");
+                nav?.classList.add("invisible");
+            });
+        });
+    </script>
 </header>

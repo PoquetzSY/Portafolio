@@ -82,7 +82,7 @@ const PROJECTS = [
 ];
 ---
 
-<div class="grid grid-cols-3 gap-x-16 justify-items-center">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 justify-items-center">
     {
         PROJECTS.map(({ title, description, tags, image, link, github }) => (
             <div class="max-w-sm rounded overflow-hidden shadow-lg bg-slate-700 bg-opacity-20 mb-10">
@@ -108,7 +108,7 @@ const PROJECTS = [
                         href={link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="flex w-24 rounded-[5px] items-center bg-gray-600"
+                        class="flex w-24 rounded-[5px] items-center bg-gray-600 hover:scale-[115%] transition"
                     >
                         <BrowserIcon class="size-4 mx-2" />
                         Visitar
@@ -117,7 +117,7 @@ const PROJECTS = [
                         href={github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="flex w-24 rounded-[5px] items-center bg-neutral-800"
+                        class="flex w-24 rounded-[5px] items-center bg-neutral-800 hover:scale-[115%] transition"
                     >
                         <GithubIcon class="size-4 mx-2" />
                         Github

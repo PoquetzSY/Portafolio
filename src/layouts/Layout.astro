@@ -1,12 +1,13 @@
 ---
 import Header from "../components/Header.astro";
 import "@fontsource-variable/quicksand";
-import '@fontsource-variable/overpass-mono';
+import "@fontsource-variable/overpass-mono";
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { description, title } = Astro.props;
 ---
 
 <!doctype html>
@@ -45,8 +46,8 @@ const { title } = Astro.props;
 		justify-content: center;
 		align-items: center;
 	}
-	.poke{
-		font-family: 'Overpass Mono Variable', sans-serif;
+	.poke {
+		font-family: "Overpass Mono Variable", sans-serif;
 	}
 	@media (prefers-reduced-motion: reduce) {
 		html {

@@ -11,12 +11,15 @@ import CardSkills from "../components/CardSkills.astro";
 import Projects from "../components/Projects.astro";
 ---
 
-<Layout title="Portafolio de Luis Gómez - Desarrollador Web">
+<Layout
+	title="Portafolio de Luis Gómez - Desarrollador Web"
+	description="Contrata a Luis para crear tu aplicación web o móvil. Desarrollador Web e Ilustrador."
+>
 	<main>
 		<SectionContainer
 			class="py-28 md:py-20 flex flex-col lg:flex-row lg:justify-between justify-items-center text-center lg:text-start"
 		>
-			<div class="w-full lg:w-[40%] lg:ml-10 h-[550px] ">
+			<div class="w-full lg:w-[40%] lg:ml-10 h-[550px]">
 				<h1 class="text-3xl md:text-4xl">Hola, soy Luis Gómez</h1>
 				<strong class="text-5xl md:text-6xl">Desarollador Web</strong>
 				<p class="mt-7 text-lg lg:text-justify">
@@ -47,7 +50,7 @@ import Projects from "../components/Projects.astro";
 			/> -->
 		</SectionContainer>
 		<SectionContainer id="about-me" class="py-[72px] flex flex-col">
-			<div class="flex ">
+			<div class="flex">
 				<AboutMeIcon class="size-14 mr-4" />
 				<strong class="text-5xl pb-10">Sobre mi</strong>
 			</div>
@@ -75,9 +78,13 @@ import Projects from "../components/Projects.astro";
 						aplicaciones y agregar un valor significativo a cada
 						proyecto.
 					</p>
-					<div class="flex flex-col lg:justify-evenly md:flex-row md:gap-x-10 items-center ">
+					<div
+						class="flex flex-col lg:justify-evenly md:flex-row md:gap-x-10 items-center"
+					>
 						<CardSkills>
-							<p class="text-center text-lg lg:text-xl">Hard Skills</p>
+							<p class="text-center text-lg lg:text-xl">
+								Hard Skills
+							</p>
 							<ul class="mt-5">
 								<li>- Desarrollo Front-End</li>
 								<li>- Diseño web</li>
@@ -87,7 +94,9 @@ import Projects from "../components/Projects.astro";
 							</ul>
 						</CardSkills>
 						<CardSkills>
-							<p class="text-center text-lg lg:text-xl">Soft Skills</p>
+							<p class="text-center text-lg lg:text-xl">
+								Soft Skills
+							</p>
 							<ul class="mt-5">
 								<li>- Creatividad</li>
 								<li>- Pensamiento critico</li>
